@@ -2,7 +2,7 @@
 - AWS (hosting web server)
 - HTML5
 - CSS3
-- BootStrap
+- React
 - JavaScript
 
 # What does the web application contain?
