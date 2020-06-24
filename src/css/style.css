@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(138, 216, 226);
+    color: #000;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.App {
+    background-color: #fff;
+    margin: auto;
+    max-width: 950px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(71, 104, 167);
+    border-radius: 1px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.nav-menu li {
+    border-radius: 5px;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-menu__link {
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 3px 8px;
+    background-color: #fff;
+} 
+
+.nav-menu__link:hover {
+    border: 1px solid #000;
+    background-color: rgb(153, 224, 241);
+    transition: all 3.5s ease-in-out;
+    cursor: pointer;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-content {
+    padding-bottom: 50px;
+    max-width: 85%;
+    margin: 1%;
+    height: auto;
+}
+
+.home-image img {
+    width: 30%;
+    height: 35%;
+    border-radius: 5px;
+    background-size: cover;
+    margin-bottom: 50%;
+}
+
+.biography {
+    position: relative;
+    bottom: 400px;
+}
+
+.links-content {
+    padding: 5px;
+}
+
+.social-media-menu ul {
+    padding: 0;
+    margin: 0;
+    transform: translate(43%, 10%);
+    display: flex;
+}
+
+.social-media-menu ul li {
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.social-media-menu ul li .fa {
+    font-size: 30px; 
+    padding: 6px;
+    line-height: 60px;
+    transition: .6s;
+}
+
+.social-media-menu ul li a {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 70px;
+    border-radius: 50%;
+    background-color: lightgray;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 3px 4px rgb(0, 0, 0, .5);
+}
+
+.contact-page-details {
+    padding: 5px;
+}
+
+.contact-link a {
+    padding: 5px;
+    margin: 0;
+    transform: translate(43%, 10%);
+    display: flex;
+}
+
+.contact-link a .fa {
+    font-size: 30px; 
+    padding: 6px;
+    line-height: 60px;
+    transition: .6s;
+}
