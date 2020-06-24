@@ -6,7 +6,7 @@
 - JavaScript
 
 # What does the web application contain?
-@@ -18,7 +17,7 @@ The following pages are included in the application:
+The following pages are included in the application:
 - links page
   - contains links to my github, and linkedin.
 - contact page
@@ -15,4 +15,9 @@
 
   # What was challenging and simple?
   ## Challenging
-  - getting started with NodeJS and React.
+  - Getting started with NodeJS and React.
+  - Styling each individual page.
+  
+  ## Simple
+  - Learning how React works conceptually.
+  - Deploying the web application was simple to do.
