@@ -5,10 +5,13 @@
 - JavaScript
 
 ## What is included in my Portfolio website
-- work page
-  - contains previous accomplishments, and work experience.
-  - projects will include a link to github repository.
-- links page
-  - contains links to my github, linkedin, and resume.
-- contact page
-  - contains form to email me with any concerns, suggestions to my web design, and many more.
+- Home 
+  - introduction to website
+- About 
+  - Tells user about developer
+- Skills
+  - Lists all of the languages, technologies, and tools the developer has experience in.
+- Work Experience 
+  - Lists all relevant work experience
+- Contact
+  - Contains a contact form and methods of contact
