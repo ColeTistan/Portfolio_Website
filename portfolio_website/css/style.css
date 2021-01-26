@@ -1,0 +1,61 @@
+/* additional css - start */
+.section-title{
+    text-decoration: underline;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.text-shadow{
+    text-shadow: #010101 2px 0 10px;
+}
+
+.font-weight-100{
+    font-weight: 100;
+}
+
+.font-weight-200{
+    font-weight: 200;
+}
+
+.font-weight-300{
+    font-weight: 300;
+}
+
+.font-weight-400{
+    font-weight: 400;
+}
+
+.font-weight-500{
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+/* start css - end */
+
+/* media queries - start */
+
+@media only screen and (min-width: 1024px){ 
+    .intro-box{
+        margin-top: 125px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .mobile-footer{
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* media queries - end */
