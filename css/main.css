@@ -1,0 +1,8 @@
+@import './imports/services.css';
+@import './imports/projects.css';
+@import './imports/about.css';
+@import './imports/contact.css';
+
+.main {
+    min-height: calc(100vh - 50px);
+}

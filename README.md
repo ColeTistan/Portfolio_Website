@@ -1,8 +1,7 @@
 ## What Technologies & languages did I use?
 - HTML5
 - CSS3
-- React.js
-- JavaScript
+- Native JavaScript
 
 ## What is included in my Portfolio website
 - Home 
