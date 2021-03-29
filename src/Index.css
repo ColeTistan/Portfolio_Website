@@ -1,10 +1,14 @@
+/* fafafa 1c203b f9fbf2 ed6a5a 66d7d1 */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@import './header.css';
-@import './main.css';
-@import './footer.css';
+@import './Header/Header.css';
+@import './Services/Services.css';
+@import './Footer/Footer.css';
 
-/* fafafa 1c203b f9fbf2 ed6a5a 66d7d1 */
+.main {
+    min-height: calc(100vh - 50px);
+}
 
 * {
     margin: 0;
@@ -12,7 +16,6 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-
 
 .container {
     width: 75%;

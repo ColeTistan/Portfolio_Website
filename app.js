@@ -1,5 +1,10 @@
+/* global variables */
+const menuToggle = document.getElementById('toggle-menu');
+const navList = document.getElementById('nav-list');
+
+/* import html files to app.html */
 const getHtmlFile = (fileName) => {
-    fetch(`./${fileName}.html`)
+    fetch(`./${fileName}/${fileName}.html`)
         .then(response => {
             return response.text();
         })
@@ -8,6 +13,11 @@ const getHtmlFile = (fileName) => {
         })
 }
 
-getHtmlFile('header');
 getHtmlFile('services');
 getHtmlFile('footer');
+
+/* toggle navigation menu */
+menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+})
+
