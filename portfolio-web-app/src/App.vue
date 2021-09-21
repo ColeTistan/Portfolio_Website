@@ -1,20 +1,17 @@
 <template>
-<div>
   <Header />
-</div>
 </template>
 
 <script>
-import Header from './layout/Header.vue';
-
+import Header from './components/layout/Header.vue';
 export default {
-  name: 'App',
+
   components: {
     Header
   }
 }
 </script>
-
 <style lang="scss">
+@use './assets/scss/global.scss';
 
 </style>

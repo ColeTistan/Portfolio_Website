@@ -1,22 +1,9 @@
-navLinks = [
-    'services',
-    'projects',
-    'about',
-    'contact'
+routes = [
+    '',
+    'service',
+    'Project'
 ]
 
-cardData = {
-    title: '',
-    description: '',
-    technologies : {
-        technologyOne: '',
-        technologyTwo: ''
-    },
-    repository: '',
-    demo: ''
-}
-
 export default {
-    cardData,
 
 }
