@@ -1,13 +1,14 @@
 import React from 'react'
 import profileImg from '../images/second-profile-pic.jpg'
+import techData from '../data'
 
 function About() {
   return (
     <div>
       <div className='text-3xl sm:text-4xl text-center pb-6 flex flex-col justify-center items-center font-thin'>
-        <img className='hover:shadow-lg hover: duration-500 object-cover h-44 w-44 rounded-full' src={profileImg} alt='profile picture' />
+        <img className='hover:shadow-lg hover: duration-500 object-cover h-44 w-44 rounded-full' src={profileImg} alt='profile' />
         <span className='text-5xl font-normal py-2'>Cole Tistan</span>
-        All in building a better web for everyone.
+          All in building a better web for everyone.
       </div>
       <div className='text-3xl text-center border-t-2 border-gray-500 pt-6 pb-2'>
         About Me
@@ -33,8 +34,41 @@ function About() {
       <div className='text-3xl text-center border-t-2 border-gray-500 pt-6 pb-2'>
         Technologies
       </div>
-      <div>
-        
+      <div className='flex flex-col items-center'>
+        <span className='text-2xl my-3'>Back End</span>
+        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6'>
+          {
+            techData.backendTech.map((data, id) => {
+              const Icon = data
+
+              return (
+                <Icon className='text-6xl md:text-7xl p-2
+                  duration-300 hover:bg-sky-600 hover:border-sky-600 
+                hover:text-gray-200 hover:shadow-md border-2 
+                border-gray-500 rounded-2xl' 
+                  key={id} 
+                />
+              )
+            })
+          }
+        </div>
+          <span className='text-2xl py-3'>Front End</span>
+        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6'>
+          {
+            techData.frontendTech.map((data, id) => {
+              const Icon = data
+
+              return (
+                <Icon className='text-6xl md:text-7xl p-2
+                  duration-300 hover:bg-sky-600 hover:border-sky-600 
+                hover:text-gray-200 hover:shadow-md border-2 
+                border-gray-500 rounded-2xl' 
+                  key={id} 
+                />  
+              )
+            })
+          }
+        </div>
       </div>
     </div>
   )

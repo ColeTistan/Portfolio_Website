@@ -1,5 +1,5 @@
-import { DiMongodb, DiReact, DiNodejsSmall } from 'react-icons/di';
-import { SiExpress, SiPython, SiDjango, SiAngular, SiTailwindcss } from 'react-icons/si';
+import { DiMongodb, DiReact, DiNodejsSmall, DiSass } from 'react-icons/di';
+import { SiExpress, SiPython, SiDjango, SiAngular, SiTailwindcss, SiJavascript } from 'react-icons/si';
 
 const navLinks = [
     {
@@ -13,40 +13,25 @@ const navLinks = [
 ]
 
 const frontendTech = [
-    {
-        id: 1,
-        icon: DiReact
-    },
-    {
-        id: 2,
-        icon: SiAngular
-    },
-    {
-        id: 3,
-        icon: SiTailwindcss
-    }
+    DiReact,
+    SiAngular,
+    SiTailwindcss,
+    SiJavascript,
+    DiSass
 ]
 
 const backendTech = [
-    {
-        id: 1,
-        icon: DiMongodb
-    },
-    {
-        id: 2,
-        icon: SiExpress
-    },
-    {
-        id: 3,
-        icon: DiNodejsSmall
-    },
-    {
-        id: 4,
-        icon: SiPython
-    },
-    {
-        id: 5,
-        icon: SiDjango
-    }
+    DiMongodb,
+    SiExpress,
+    DiNodejsSmall,
+    SiPython,
+    SiDjango
 ]
-export default { navLinks, frontendTech, backendTech }
+
+const exportData = {
+    navLinks, 
+    frontendTech, 
+    backendTech 
+}
+
+export default exportData
