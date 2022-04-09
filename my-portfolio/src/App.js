@@ -1,12 +1,14 @@
 import React from "react";
 import './App.css';
 import Navbar from "./layout/Navbar";
+import Home from "./layout/Home";
 function App() {
   return (
     <div className='App'>
       <Navbar />
-      <div className='bg-sky-600 w-full h-screen'>      
-      </div> 
+      <div className='w-full h-screen text-gray-700 pt-[150px]'> 
+        <Home />
+      </div>
     </div>
   );
 }
