@@ -34,42 +34,36 @@ function About() {
       <div className='text-3xl text-center border-t-2 border-gray-500 pt-6 pb-2'>
         Technologies
       </div>
-      <div className='flex flex-col items-center'>
-        <span className='text-2xl my-3'>Back End</span>
-        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6'>
+      <section className='flex flex-col items-center'>
+        <span className='section-title'>Back End</span>
+        <div className='section-grid'>
           {
             techData.backendTech.map((data, id) => {
               const Icon = data
 
               return (
-                <Icon className='text-6xl md:text-7xl p-2
-                  duration-300 hover:bg-sky-600 hover:border-sky-600 
-                hover:text-gray-200 hover:shadow-md border-2 
-                border-gray-500 rounded-2xl' 
+                <Icon className='language-icon' 
                   key={id} 
                 />
               )
             })
           }
         </div>
-          <span className='text-2xl py-3'>Front End</span>
-        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6'>
+        <span className='section-title'>Front End</span>
+        <div className='section-grid'>
           {
             techData.frontendTech.map((data, id) => {
               const Icon = data
 
               return (
-                <Icon className='text-6xl md:text-7xl p-2
-                  duration-300 hover:bg-sky-600 hover:border-sky-600 
-                hover:text-gray-200 hover:shadow-md border-2 
-                border-gray-500 rounded-2xl' 
+                <Icon className='language-icon' 
                   key={id} 
                 />  
               )
             })
           }
         </div>
-      </div>
+      </section>
     </div>
   )
 }

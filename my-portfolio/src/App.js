@@ -1,7 +1,9 @@
-import React from "react";
-import './App.css';
-import Navbar from "./layout/Navbar";
-import Home from "./layout/Home";
+import React from 'react'
+import './App.css'
+import Navbar from './layout/Navbar'
+import Home from './layout/Home'
+// import Footer from './layout/Footer'
+
 function App() {
   return (
     <div className='App'>
@@ -10,7 +12,7 @@ function App() {
         <Home />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

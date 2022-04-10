@@ -43,3 +43,19 @@
 
 /* navbar layout - end  */
 
+/* home layout - start */
+
+.section-title {
+    @apply text-2xl my-3;
+}
+
+.section-grid {
+    @apply grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6;
+}
+
+.language-icon {
+    @apply text-6xl md:text-7xl p-2 duration-300 hover:bg-sky-600 hover:border-sky-600 hover:text-gray-200 hover:shadow-md border-2 border-gray-500 rounded-lg;
+}
+
+
+/* home layout - end */
