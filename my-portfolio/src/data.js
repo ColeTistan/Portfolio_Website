@@ -1,5 +1,5 @@
 import { DiMongodb, DiReact, DiNodejsSmall, DiSass } from 'react-icons/di';
-import { SiExpress, SiPython, SiDjango, SiAngular, SiTailwindcss, SiJavascript } from 'react-icons/si';
+import { SiExpress, SiPython, SiDjango, SiAngular, SiTailwindcss, SiJavascript, SiGithub, SiLinkedin } from 'react-icons/si';
 
 const navLinks = [
     {
@@ -28,10 +28,16 @@ const backendTech = [
     SiDjango
 ]
 
+const socialIcons = [
+  SiLinkedin,
+  SiGithub
+]
+
 const exportData = {
     navLinks, 
     frontendTech, 
-    backendTech 
+    backendTech,
+    socialIcons
 }
 
 export default exportData

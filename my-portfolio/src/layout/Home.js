@@ -42,7 +42,7 @@ function About() {
               const Icon = data
 
               return (
-                <Icon className='language-icon' 
+                <Icon className='icon' 
                   key={id} 
                 />
               )
@@ -56,9 +56,7 @@ function About() {
               const Icon = data
 
               return (
-                <Icon className='language-icon' 
-                  key={id} 
-                />  
+                <Icon className='icon' key={id} />  
               )
             })
           }
