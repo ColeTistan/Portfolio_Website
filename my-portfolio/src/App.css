@@ -16,7 +16,7 @@
 
 /* general - start */
 .button {
-    @apply border-2 font-medium uppercase duration-300 px-3 py-1 focus:ring;
+    @apply border-2 font-medium uppercase duration-300 px-3 py-2 focus:ring;
 }
 /* general - end */
 
@@ -54,7 +54,7 @@
 }
 
 .icon {
-    @apply text-6xl md:text-7xl p-2 duration-300 hover:bg-sky-600 hover:border-sky-600 hover:text-gray-200 hover:shadow-md border-2 border-gray-500 rounded-lg;
+    @apply text-6xl md:text-7xl p-2 duration-300 hover:bg-sky-600 hover:border-sky-600 hover:text-gray-200 hover:shadow-md border-2 border-gray-500 rounded-md;
 }
 
 

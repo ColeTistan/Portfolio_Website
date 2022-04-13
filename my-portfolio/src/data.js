@@ -11,7 +11,9 @@ const navLinks = [
       title: 'Contact'
     },
 ]
-
+/*
+* TODO - modify array elements as objects with icon color and url data.
+*/
 const frontendTech = [
     DiReact,
     SiAngular,
@@ -29,8 +31,16 @@ const backendTech = [
 ]
 
 const socialIcons = [
-  SiLinkedin,
-  SiGithub
+  {
+    id: 1,
+    icon: SiLinkedin,
+    url: 'https://www.linkedin.com/in/coletistan/'
+  },
+  {
+    id: 2,
+    icon: SiGithub,
+    url: 'https://github.com/ColeTistan'
+  }
 ]
 
 const exportData = {

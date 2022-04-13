@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import navLinkData from '../data';
+import resume from '../Resume.pdf';
 
 const Navbar = () => {
 
@@ -27,9 +28,9 @@ const Navbar = () => {
             })
           }  
           <li className='nav-item'>
-            <button className='button rounded-md border-sky-600 hover:bg-sky-600 hover:text-gray-200'>
+            <a href={resume} target='_blank' className='button rounded-md border-sky-600 hover:bg-sky-600 hover:text-gray-200'>
               My Resume
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
