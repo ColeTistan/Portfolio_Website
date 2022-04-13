@@ -38,13 +38,13 @@ function About() {
         <span className='section-title'>Back End</span>
         <div className='section-grid'>
           {
-            techData.backendTech.map((data, id) => {
-              const Icon = data
+            techData.backendTech.map((data) => {
+              const Icon = data.icon
 
               return (
-                <Icon className='icon' 
-                  key={id} 
-                />
+                <a href={data.url} target='_blank' key={data.id}>
+                  <Icon className={`icon ${data.color}`} />
+                </a>
               )
             })
           }
@@ -52,11 +52,13 @@ function About() {
         <span className='section-title'>Front End</span>
         <div className='section-grid'>
           {
-            techData.frontendTech.map((data, id) => {
-              const Icon = data
+            techData.frontendTech.map((data) => {
+              const Icon = data.icon
 
               return (
-                <Icon className='icon' key={id} />  
+                <a href={data.url} target='_blank' key={data.id}>
+                  <Icon className={`icon ${data.color}`} />  
+                </a>
               )
             })
           }

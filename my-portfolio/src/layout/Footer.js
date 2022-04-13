@@ -19,7 +19,7 @@ function Footer() {
             })
           }
         </div>
-        <div className='text-center text-md p-2 border-t-2 border-gray-300 w-1/4 m-auto'>
+        <div className='text-center text-md p-2 border-t-2 border-gray-300 w-1/2 md:w-1/4 m-auto'>
           &copy; 2022 Cole Tistan: Copyright
         </div>
       </footer>
