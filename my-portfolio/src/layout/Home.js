@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import profileImg from '../images/second-profile-pic.jpg'
 import techData from '../data'
 
-function About() {
+function Home() {
   return (
     <div>
-      <div className='text-3xl sm:text-4xl text-center pb-6 flex flex-col justify-center items-center font-thin'>
+      <div className='text-3xl sm:text-4xl text-center pb-6 flex flex-col flex-grow justify-center items-center font-thin'>
         <img className='hover:shadow-lg hover: duration-500 object-cover h-44 w-44 rounded-full' src={profileImg} alt='profile' />
         <span className='text-5xl font-normal py-2'>Cole Tistan</span>
           All in building a better web for everyone.
@@ -68,4 +69,4 @@ function About() {
   )
 }
 
-export default About
+export default Home

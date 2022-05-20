@@ -4,11 +4,13 @@ import { SiExpress, SiPython, SiDjango, SiAngular, SiTailwindcss, SiJavascript, 
 const navLinks = [
     {
       id: 1,
-      title: 'Work'
+      title: 'Work',
+      link: 'work'
     },
     {
       id: 2,
-      title: 'Contact'
+      title: 'Contact',
+      link: 'contact'
     },
 ]
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
 import navLinkData from '../data';
 import resume from '../Resume.pdf';
@@ -9,9 +10,9 @@ const Navbar = () => {
   return (
     <div className='shadow-md w-full fixed top-0 left-0'>
       <nav className='nav'>
-        <span className='nav-title'>
+        <Link to='/' className='nav-title'>
           Cole Tistan
-        </span>
+        </Link>
         <div onClick={() => setOpen(!open)} className='nav-menu'>
           {open ? <HiX />: <HiMenu />}
         </div>
@@ -20,9 +21,9 @@ const Navbar = () => {
             navLinkData.navLinks.map((data) => { 
               return (
               <li className='nav-item' key={data.id}>
-                <a href='#' className='hover:text-gray-500 font-medium duration-300 p-2'>
+                <Link to={`/${data.link}`} className='hover:text-gray-500 font-medium duration-300 p-2'>
                   {data.title}
-                </a>
+                </Link>
               </li>
               )
             })
