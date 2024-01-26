@@ -1,0 +1,153 @@
+---import "../styles/global.scss";
+import "../styles/global.scss";
+import "../styles/global.scss";
+
+let navItems = [
+  { title: "Home", url: "/home" },
+  { title: "About", url: "/about" },
+  { title: "Projects", url: "/projects" },
+  { title: "Contact", url: "/contact" },
+];
+---
+
+<header>
+  <div class="logo">Cole Tistan</div>
+  <div class="hamburger-menu">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <nav class="nav-items">
+    <ul class="nav-list">
+      {
+        navItems.map((data) => (
+          <li class="nav-item">
+            <a href={data.url} class="nav-link">
+              {data.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+<script is:inline>
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navItems = document.querySelector(".nav-items");
+  console.log(navItems);
+
+  hamburgerMenu.addEventListener("click", () => {
+    console.log(navItems);
+    navItems.classList.toggle("active");
+    hamburgerMenu.classList.toggle("clicked");
+  });
+</script>
+
+<style lang="scss">
+  @import "../styles/global.scss";
+
+  @mixin nav-link-group($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $light-gray;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-items {
+    &.active {
+      height: 100%;
+    }
+  }
+
+  .nav-list {
+    display: flex;
+
+    .nav-item {
+      list-style: none;
+
+      .nav-link {
+        display: block;
+        text-decoration: none;
+        color: $light-gray;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        font-weight: $font-weight-400;
+        padding: 10px 25px;
+        border-radius: 0.25rem;
+        transition: all 200ms ease-in-out;
+        margin: 0 5px;
+
+        &:hover {
+          @include nav-link-group($white, $raisin-black);
+        }
+      }
+    }
+  }
+
+  @container (max-width: 768px) {
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    .hamburger-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      border-radius: 50%;
+      height: 55px;
+      width: 55px;
+      transition: all 350ms ease-in-out;
+
+      &.clicked {
+        transform: rotate(180deg);
+      }
+
+      .line {
+        background-color: $white;
+        width: 25px;
+        height: 2px;
+        margin: 3px 0;
+        border-radius: 1rem;
+      }
+    }
+
+    .nav-items {
+      height: 0;
+      position: absolute;
+      top: 5%;
+      left: 0;
+      right: 0;
+      width: 100dvw;
+      background-color: $raisin-black;
+      transition: all 200ms ease-in-out;
+      overflow: hidden;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+      }
+
+      .nav-list {
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 80px auto 25px auto;
+
+        .nav-item {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+</style>

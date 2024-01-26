@@ -1,0 +1,34 @@
+---
+import "../styles/global.scss";
+import Layout from "../layouts/Layout.astro";
+import profileImg from "../images/profile.jpg";
+---
+
+<Layout title="Cole Tistan - Portfolio">
+  <section class="grid-row">
+    <div class="grid-column">
+      <p>Ciao, I'm Cole.</p>
+      <p>I'm a full stack software engineer.</p>
+    </div>
+    <div class="grid-column">
+      <img class="profile-img" src={profileImg.src} alt="profile picture" />
+    </div>
+  </section>
+  <a href="" target="_blank"></a>
+</Layout>
+
+<style lang="scss">
+  @import "../styles/global.scss";
+
+  .grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .profile-img {
+    width: 75%;
+    height: auto;
+    border-radius: 50%;
+  }
+</style>
