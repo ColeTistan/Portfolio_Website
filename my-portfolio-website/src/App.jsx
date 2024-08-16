@@ -1,9 +1,9 @@
 // import { useState } from "react";
 import Header from "./layouts/Header";
-import Main from "./components/Main";
+import Main from "./layouts/Main";
 import "./style.css";
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />

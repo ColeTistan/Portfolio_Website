@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover-primary {
+    @apply hover:text-primary transition-all duration-200 font-medium;
+}
