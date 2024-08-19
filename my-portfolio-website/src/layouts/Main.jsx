@@ -5,7 +5,7 @@ import Projects from "./Projects";
 
 const Main = () => {
   return (
-    <div className="grid grid-cols-1 justify-items-center gap-8 mx-auto">
+    <div className="grid grid-cols-1 justify-items-center gap-2 xl:m-auto mx-8">
       <Home />
       <Divider title="My Portfolio" />
       <Projects />

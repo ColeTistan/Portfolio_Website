@@ -2,13 +2,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100 px-14 shadow-md mb-10">
+    <div className="navbar bg-base-100 px-14 shadow-md mb-10 z-[1] sticky top-0">
       <div className="navbar-start">
         <a className="btn btn-ghost rounded-md text-xl">Cole Tistan</a>
       </div>
       <div className="navbar-end md:gap-x-6 flex flex-end">
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <button className="btn btn-square btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -22,10 +22,10 @@ const Header = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-          </div>
+          </button>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow"
           >
             <li>
               <a href="">Resume</a>
@@ -52,6 +52,6 @@ const Header = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

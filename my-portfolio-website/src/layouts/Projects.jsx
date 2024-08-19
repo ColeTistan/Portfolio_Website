@@ -1,19 +1,22 @@
 import React from "react";
 import Card from "../components/Card";
+import cards from "../assets/data";
 
 const Projects = () => {
+  const cardDivs = cards.map((card) => (
+    <Card
+      key={card.id}
+      thumbnail={card.thumbnail}
+      title={card.title}
+      description={card.description}
+      link={card.link}
+      repository={card.repository}
+    />
+  ));
   return (
-    <>
-      <div className="join">
-        <button className="btn join-item">JavaScript</button>
-        <button className="btn join-item">Python</button>
-      </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-8 mx-auto">
-        <Card />
-        <Card />
-        <Card />
-      </div>
-    </>
+    <div className="flex flex-col lg:flex-row flex-wrap container gap-[40px] justify-around">
+      {cardDivs}
+    </div>
   );
 };
 
