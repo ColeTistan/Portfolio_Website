@@ -2,21 +2,21 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { FaGithub, FaLink } from "react-icons/fa";
 
-const Card = ({ id, thumbnail, title, description, link, repository, tools }) => {
+const Card = ({ thumbnail, title, description, link, repository, tools }) => {
   return (
-    <div
-      className="card bg-base-100 w-full lg:w-[calc(50%-20px)] shadow-xl"
-    >
+    <div className="card bg-base-100 w-full lg:w-[calc(50%-20px)] shadow-xl">
       <figure>
         <img src={thumbnail} alt={title} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{title}</h2>
+        <h2 className="card-title text-2xl">{title}</h2>
         <p className="text-base md:text-lg">{description}</p>
-        {/* <div className="justify-start">
-          {tools.map((tool) => <div className={tool.color}><{tool.icon}/></div>)}
-        </div> */}
-        <div className="card-actions justify-end mt-5">
+        <div className="flex flex-wrap justify-start gap-2 my-1">
+          {tools.map((tool, index) => (
+            <div key={index} className="badge badge-primary text-slate-50 rounded-full">{tool}</div>
+          ))}
+        </div>
+        <div className="card-actions justify-end gap-4">
           <a href={link} target="_blank">
             <IconContext.Provider value={{ className: "icon-lg" }}>
               <FaLink />

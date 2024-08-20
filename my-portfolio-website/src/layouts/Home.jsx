@@ -11,7 +11,7 @@ const Home = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center text-center gap-1 md:w-3/5">
-        <p className="text-3xl leading-normal">
+        <p className="text-3xl leading-normal my-2">
           Howdy There!&nbsp;👋&nbsp;
           <span className="hover-primary">Cole Tistan</span>
           &nbsp;Here!&nbsp;I'm a&nbsp;

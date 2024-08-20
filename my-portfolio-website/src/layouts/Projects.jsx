@@ -11,6 +11,7 @@ const Projects = () => {
       description={card.description}
       link={card.link}
       repository={card.repository}
+      tools={card.tools}
     />
   ));
   return (
