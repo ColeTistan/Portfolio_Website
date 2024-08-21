@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
-import cards from "../assets/data";
+import data from "../assets/data";
 
 const Projects = () => {
-  const cardDivs = cards.map((card) => (
+  const cardDivs = data.cards.map((card, index) => (
     <Card
-      key={card.id}
+      key={index}
       thumbnail={card.thumbnail}
       title={card.title}
       description={card.description}

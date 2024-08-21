@@ -1,6 +1,7 @@
 import React from "react";
 import { IconContext } from "react-icons";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoIosDocument } from "react-icons/io";
 
 const Home = () => {
   return (
@@ -41,6 +42,17 @@ const Home = () => {
           Linkedin
           <IconContext.Provider value={{ className: "icon-lg" }}>
             <FaLinkedin />
+          </IconContext.Provider>
+        </a>
+        <a
+          href="../../public/images/resume.pdf"
+          target="_blank"
+          type="application/pdf"
+          className="btn hover:shadow-lg btn-primary text-slate-50 px-7 rounded-full text-base"
+        >
+          Resume
+          <IconContext.Provider value={{ className: "icon-lg" }}>
+            <IoIosDocument />
           </IconContext.Provider>
         </a>
       </div>

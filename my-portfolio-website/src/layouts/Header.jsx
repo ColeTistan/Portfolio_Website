@@ -28,9 +28,6 @@ const Header = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a href="">Resume</a>
-            </li>
-            <li>
               <a href="#portfolio">Portfolio</a>
             </li>
             <li>
