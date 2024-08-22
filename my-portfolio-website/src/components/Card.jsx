@@ -4,7 +4,7 @@ import { FaGithub, FaLink } from "react-icons/fa";
 
 const Card = ({ thumbnail, title, description, link, repository, tools }) => {
   return (
-    <div className="card bg-base-100 w-full lg:w-[calc(50%-20px)] shadow-xl">
+    <div className="card bg-base-100 w-full lg:w-[calc(50%-20px)] shadow-md hover:shadow-lg hover:-translate-y-3 duration-200 transition-all">
       <figure>
         <img src={thumbnail} alt={title} />
       </figure>
@@ -13,7 +13,12 @@ const Card = ({ thumbnail, title, description, link, repository, tools }) => {
         <p className="text-base md:text-lg">{description}</p>
         <div className="flex flex-wrap justify-start gap-2 my-1">
           {tools.map((tool, index) => (
-            <div key={index} className="badge badge-primary text-slate-50 rounded-full">{tool}</div>
+            <div
+              key={index}
+              className="badge badge-primary text-slate-50 rounded-full"
+            >
+              {tool}
+            </div>
           ))}
         </div>
         <div className="card-actions justify-end gap-4">

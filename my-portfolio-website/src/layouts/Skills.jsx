@@ -8,11 +8,10 @@ const Skills = () => {
       key={index}
       icon={skill.icon}
       title={skill.title}
-      color={skill.color}
     />
   ));
   return (
-    <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 justify-items-center gap-8">
+    <ul id="skills" className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 justify-items-center gap-8">
       {skillItems}
     </ul>
   );

@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
       <div className="avatar" id="portfolio">
-        <div className="w-28 z-0 border-[5px] border-secondary border-opacity-35 hover:border-primary rounded-full transition-all duration-300">
-          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        <div className="w-32 z-0 border-[5px] border-secondary border-opacity-35 hover:border-primary rounded-full transition-all duration-300">
+          <img src="/images/profile.png" />
         </div>
       </div>
       <div className="flex flex-col justify-center text-center gap-1 md:w-3/5">
@@ -27,7 +27,7 @@ const Home = () => {
         <a
           href="https://github.com/ColeTistan"
           target="_blank"
-          className="btn hover:shadow-lg btn-primary text-slate-50 px-7 rounded-full text-base"
+          className="btn hover:shadow-md btn-primary text-slate-50 px-7 rounded-full text-base"
         >
           Github
           <IconContext.Provider value={{ className: "icon-lg" }}>
@@ -37,7 +37,7 @@ const Home = () => {
         <a
           href="https://www.linkedin.com/in/coletistan/"
           target="_blank"
-          className="btn hover:shadow-lg btn-primary text-slate-50 px-7 rounded-full text-base"
+          className="btn hover:shadow-md btn-primary text-slate-50 px-7 rounded-full text-base"
         >
           Linkedin
           <IconContext.Provider value={{ className: "icon-lg" }}>
@@ -48,7 +48,7 @@ const Home = () => {
           href="../../public/images/resume.pdf"
           target="_blank"
           type="application/pdf"
-          className="btn hover:shadow-lg btn-primary text-slate-50 px-7 rounded-full text-base"
+          className="btn hover:shadow-md btn-primary text-slate-50 px-7 rounded-full text-base"
         >
           Resume
           <IconContext.Provider value={{ className: "icon-lg" }}>
