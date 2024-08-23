@@ -4,7 +4,7 @@ import { FaGithub, FaLink } from "react-icons/fa";
 
 const Card = ({ thumbnail, title, description, link, repository, tools }) => {
   return (
-    <div className="card bg-base-100 w-full lg:w-[calc(50%-20px)] shadow-md hover:shadow-lg hover:-translate-y-3 duration-200 transition-all">
+    <div className="card-base">
       <figure>
         <img src={thumbnail} alt={title} />
       </figure>

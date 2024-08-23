@@ -15,7 +15,10 @@ const Projects = () => {
     />
   ));
   return (
-    <div className="flex flex-col lg:flex-row flex-wrap container gap-[40px] justify-around">
+    <div
+      id="portfolio"
+      className="flex flex-col lg:flex-row flex-wrap container gap-[40px] justify-around"
+    >
       {cardDivs}
     </div>
   );

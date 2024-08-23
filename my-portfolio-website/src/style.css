@@ -7,4 +7,24 @@
 
 .icon-lg {
   @apply text-2xl;
+}
+
+.link-base {
+  @apply link link-hover text-base;
+}
+
+.avatar-img {
+  @apply w-32 z-0 border-[5px] border-secondary border-opacity-35 hover:border-primary rounded-full transition-all duration-300;
+}
+
+.btn-primary-pill {
+  @apply btn hover:shadow-md btn-primary text-slate-50 px-7 rounded-full text-base;
+}
+
+.card-base {
+  @apply card bg-base-100 w-full lg:w-[calc(50%-20px)] shadow-md hover:shadow-lg hover:-translate-y-3 duration-200 transition-all;
+}
+
+.skill-list-item {
+  @apply text-base text-center font-normal tracking-wide leading-10 hover:scale-[1.15] duration-200 transition-all;
 }/*# sourceMappingURL=style.css.map */

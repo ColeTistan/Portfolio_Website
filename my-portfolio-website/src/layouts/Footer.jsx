@@ -5,29 +5,33 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className="footer items-center px-12 py-4 mt-20">
-        <aside className="grid-flow-col items-center">
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-        </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a
-            href="https://github.com/ColeTistan"
-            target="_blank"
-            className="flex flex-row items-center gap-x-2 text-3xl"
-          >
-            <IconContext.Provider value={{ className: "icon-lg" }}>
-              <FaGithub />
-            </IconContext.Provider>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/coletistan/"
-            target="_blank"
-            className="flex flex-row items-center gap-x-2 text-3xl"
-          >
-            <IconContext.Provider value={{ className: "icon-lg" }}>
-              <FaLinkedin />
-            </IconContext.Provider>
-          </a>
+      <footer className="footer bg-neutral text-slate-50 p-10 mt-10">
+        <nav>
+          <h6 className="footer-title">Contact Info</h6>
+          <p className="text-base">Email: coletistan@gmail.com</p>
+          <p className="text-base">Phone #: (856) 535-1401</p>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Pages</h6>
+          <a className="link-base" href="#portfolio">Portfolio</a>
+          <a className="link-base" href="#skills">Skills</a>
+          <a className="link-base" href="#experience">Experience</a>
+          <a className="link-base" href="#contact">Contact</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Social</h6>
+          <div className="grid grid-flow-col gap-4">
+            <a href="https://www.linkedin.com/in/coletistan/" target="_blank">
+              <IconContext.Provider value={{ className: "icon-lg" }}>
+                <FaLinkedin />
+              </IconContext.Provider>
+            </a>
+            <a href="https://github.com/ColeTistan" target="_blank">
+              <IconContext.Provider value={{ className: "icon-lg" }}>
+                <FaGithub />
+              </IconContext.Provider>
+            </a>
+          </div>
         </nav>
       </footer>
     </>

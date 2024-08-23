@@ -6,8 +6,8 @@ import { IoIosDocument } from "react-icons/io";
 const Home = () => {
   return (
     <>
-      <div className="avatar" id="portfolio">
-        <div className="w-32 z-0 border-[5px] border-secondary border-opacity-35 hover:border-primary rounded-full transition-all duration-300">
+      <div className="avatar">
+        <div className="avatar-img">
           <img src="/images/profile.png" />
         </div>
       </div>
@@ -27,7 +27,7 @@ const Home = () => {
         <a
           href="https://github.com/ColeTistan"
           target="_blank"
-          className="btn hover:shadow-md btn-primary text-slate-50 px-7 rounded-full text-base"
+          className="btn-primary-pill"
         >
           Github
           <IconContext.Provider value={{ className: "icon-lg" }}>
@@ -37,7 +37,7 @@ const Home = () => {
         <a
           href="https://www.linkedin.com/in/coletistan/"
           target="_blank"
-          className="btn hover:shadow-md btn-primary text-slate-50 px-7 rounded-full text-base"
+          className="btn-primary-pill"
         >
           Linkedin
           <IconContext.Provider value={{ className: "icon-lg" }}>
@@ -48,7 +48,7 @@ const Home = () => {
           href="../../public/images/resume.pdf"
           target="_blank"
           type="application/pdf"
-          className="btn hover:shadow-md btn-primary text-slate-50 px-7 rounded-full text-base"
+          className="btn-primary-pill"
         >
           Resume
           <IconContext.Provider value={{ className: "icon-lg" }}>
