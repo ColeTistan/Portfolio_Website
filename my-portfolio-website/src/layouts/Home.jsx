@@ -45,10 +45,10 @@ const Home = () => {
           </IconContext.Provider>
         </a>
         <a
-          href="../../public/images/resume.pdf"
-          target="_blank"
+          href="/images/resume.pdf"
           type="application/pdf"
           className="btn-primary-pill"
+          download="cole_tistan_resume"
         >
           Resume
           <IconContext.Provider value={{ className: "icon-lg" }}>

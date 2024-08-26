@@ -8,7 +8,7 @@ const Header = () => {
       </div>
       <div className="navbar-end md:gap-x-6 flex flex-end">
         <div className="dropdown dropdown-end">
-          <button className="btn btn-square btn-ghost btn-circle">
+          <button type="submit" className="btn btn-square btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
